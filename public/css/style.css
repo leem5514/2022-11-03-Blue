@@ -75,6 +75,7 @@ header > div.user{
   color: #FFFFFF;
 }
 
+
 header > div.user > span {
   font-weight: 300;
 }
@@ -142,8 +143,26 @@ div.contents > div.user-name {
   line-height: 29px;
 
   color: #000000;
-
+}
+#name {
   cursor: pointer; /*위치시 커서 바꾸기<12/08>*/
+}
+div.contents > div.user-number {
+  width: 329px;
+  height: 18px;
+  margin-left: 50px;
+  margin-top: 16px;
+
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+
+  color: #000000;
+}
+#number {
+  cursor: pointer;
 }
 
 div.contents > div.user-email {
@@ -159,6 +178,10 @@ div.contents > div.user-email {
   line-height: 18px;
 
   color: #000000;
+}
+
+#email {
+  cursor: pointer;
 }
 
 div.contents > div.card-area {
