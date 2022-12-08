@@ -1,8 +1,12 @@
 const headerUserNameElement = document.querySelector('.user');
 const userNameElement = document.querySelector('#name');
-
 const localUserName = localStorage.getItem('userName');
 
+const userEmailElement = document.querySelector('#email');
+const localUserEmail = localStorage.getItem('userEmail');
+
+const userNumberElement = document.querySelector('#number');
+const localUserNumber = localStorage.getItem('userNumber');
 
 const setUserNameInnerHtml = (name) => {
   headerUserNameElement.innerHTML = '${name} <span>님</span>';
@@ -20,5 +24,36 @@ userNameElement.onclick = () => {
   localStorage.setItem('userName', userName);
 
   setUserNameInnerHtml(userName);
+};
+
+//이메일 구동
+const setUserEmailInnerHtml = (email) => {
+  userEmailElement.textContent = email;
+};
+
+if (localUserEmail) {
+  setUserEmailInnerHtml(localUserEmail);
+}
+
+userEmailElement.onclick = () => {
+  const userEmail = prompt('이메일 주소를 입력해 주세요');
+  localStorage.setItem('userEmail', userEmail);
+
+  setUserNameInnerHtml(userEmail);
+};
+
+const setUserNumberInnerHtml = (number) => {
+  userNumberElement.textContent = number;
+};
+
+if (localUserNumber) {
+  setUserNumberInnerHtml(localUserNumber);
+}
+
+userNumberElement.onclick = () => {
+  const userNumber = prompt('이메일 주소를 입력해 주세요');
+  localStorage.setItem('userNumber', userNumber);
+
+  setUserNameInnerHtml(userNumber);
 };
 

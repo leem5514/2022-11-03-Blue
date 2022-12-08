@@ -142,7 +142,8 @@ div.contents > div.user-name {
   line-height: 29px;
 
   color: #000000;
-
+}
+#name {
   cursor: pointer; /*위치시 커서 바꾸기<12/08>*/
 }
 
@@ -159,6 +160,12 @@ div.contents > div.user-email {
   line-height: 18px;
 
   color: #000000;
+}
+#number {
+  cursor: pointer;
+}
+#email {
+  cursor: pointer;
 }
 
 div.contents > div.card-area {
