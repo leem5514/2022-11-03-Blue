@@ -10,7 +10,7 @@ const userNumberElement = document.querySelector('#number');
 const localUserNumber = localStorage.getItem('userNumber');
 
 const setUserNameInnerHtml = (name) => {
-  headerUserNameElement.innerHTML = '${name} <span>님</span>';
+  headerUserNameElement.innerHTML = `${name} <span>님</span>`;
   userNameElement.textContent = name;
 };
 if (localUserName) {
