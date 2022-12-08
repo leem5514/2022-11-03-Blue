@@ -26,7 +26,6 @@ userNameElement.onclick = () => {
   setUserNameInnerHtml(userName);
 };
 
-//이메일 구동
 const setUserEmailInnerHtml = (email) => {
   userEmailElement.textContent = email;
 };
@@ -51,7 +50,7 @@ if (localUserNumber) {
 }
 
 userNumberElement.onclick = () => {
-  const userNumber = prompt('이메일 주소를 입력해 주세요');
+  const userNumber = prompt('학번을 입력해 주세요');
   localStorage.setItem('userNumber', userNumber);
 
   setUserNameInnerHtml(userNumber);
